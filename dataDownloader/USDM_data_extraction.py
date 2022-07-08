@@ -26,7 +26,7 @@ def pullData(years, year):
         #filename = url.split('/')[-1]
         #print(filename)
         
-        directoryName = './dataStorage/raw/'
+        directoryName = './dataStorage/raw/USDM/'
 
         if not os.path.exists(directoryName):
             os.mkdir(directoryName)
