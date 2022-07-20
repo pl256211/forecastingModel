@@ -2,23 +2,25 @@
 # $ conda create --name <env> --file <this file>
 # platform: osx-64
 brotlipy=0.7.0=py38h9ed2024_1003
-ca-certificates=2022.4.26=hecd8cb5_0
-certifi=2022.6.15=py38hecd8cb5_0
+ca-certificates=2022.6.15=h033912b_0
+certifi=2022.6.15=py38h50d1736_0
 cffi=1.15.0=py38hc55c11b_1
 charset-normalizer=2.0.4=pyhd3eb1b0_0
 cryptography=37.0.1=py38hf6deb26_0
 idna=3.3=pyhd3eb1b0_0
-json=0.1.1=0
+#json=0.1.1=0
 libcxx=12.0.0=h2f01273_0
 libffi=3.3=hb1e8313_2
 ncurses=6.3=hca72f7f_3
-openssl=1.1.1o=hca72f7f_0
+openssl=1.1.1q=hfe4f2af_0
 pip=21.2.4=py38hecd8cb5_0
 pycparser=2.21=pyhd3eb1b0_0
 pyopenssl=22.0.0=pyhd3eb1b0_0
+pyshp=2.3.0=pyhd8ed1ab_0
 pysocks=1.7.1=py38_1
 python=3.8.13=hdfd78df_0
-qutil=3.2.1=6
+python_abi=3.8=2_cp38
+#qutil=3.2.1=6
 readline=8.1.2=hca72f7f_1
 requests=2.27.1=pyhd3eb1b0_0
 setuptools=61.2.0=py38hecd8cb5_0

@@ -56,4 +56,4 @@ def removeEverythingButSHP(years, startYear):
                os.remove('./dataStorage/unzipped/' + str(year) + '/' + path)
         year -= 1
 pullData(10, 2022)
-removeEverythingButSHP(10, 2022)
+#removeEverythingButSHP(10, 2022)

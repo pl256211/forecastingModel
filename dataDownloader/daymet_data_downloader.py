@@ -9,17 +9,22 @@ def download_file(url, directory):
             f.write(r.content)
     return local_filename
 
+def makeNewDir(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
 def placeFileInDir(years, year, loc = 'hi'):
     numb = year
-    bands = ['prcp_annttl_', 'tmin_annavg_', 'swe_annavg_', 'vp_annavg_', "tmax_annavg_"]
+    bands = ['prcp', 'dayl', 'srad', 'swe', "tmax", 'tmin']
     for i in range(years):
         num = str(numb)
         for j in bands:
             directoryName = './dataStorage/raw/daymet/'
-            url = 'https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1852/catalog.html?dataset=1852/daymet_v4_' + j + loc + '_' + num + '.nc'
-
-            if not os.path.exists(directoryName):
-                os.mkdir(directoryName)
+            #url = 'https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1852/catalog.html?dataset=1852/daymet_v4_' + j + loc + '_' + num + '.nc'
+            url = 'https://thredds.daac.ornl.gov/thredds/fileServer/ornldaac/1840/daymet_v4_daily_' + loc + '_' + j + '_' +num+'.nc'
+            makeNewDir('./dataStorage/')
+            makeNewDir('./dataStorage/raw/')
+            makeNewDir(directoryName)
 
             filename = download_file(url, directoryName)
             print(filename)

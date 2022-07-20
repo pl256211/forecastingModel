@@ -41,3 +41,11 @@ Thumbs.db
 *.netCDF
 *.ico
 *.nc
+*.shx
+*.sbx
+*.cpg
+*.prj
+*.sbn
+*.dbf
+dataDownloader/dataStorage
+*.nc4
