@@ -30,4 +30,4 @@ def placeFileInDir(years, year, loc = 'hi'):
             print(filename)
         numb -= 1
 
-placeFileInDir(12, 2021)
+placeFileInDir(1, 1980, 'hi')
