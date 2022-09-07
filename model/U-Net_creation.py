@@ -1,12 +1,12 @@
 from operator import concat
-from typing import Concatenate
+#from typing import Concatenate
 import torch
 import torch.nn as nn
 import torchvision.transforms.functional as TF
 import os
 
 
-os.environ['KMP_DUPLICATE_LIB_OK']='True'
+#os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 class DoubleConv(nn.Module):
     def __init__(self, in_channels, out_channels):
